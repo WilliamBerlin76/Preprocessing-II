@@ -1,3 +1,11 @@
+.top-border{
+  position: relative;
+  border-bottom: 2px dashed @navigation-border;
+  top:72px;
+  @media @mobile{
+    top: 99.5px;
+  }
+}
 .home {
   @media @mobile {
     width: 90%;
@@ -42,7 +50,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -56,10 +67,10 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
-    border-bottom:2px dashed @navigation-border;
+    margin: 0 auto;
     @media @mobile{
       width: 100%;
+      border-bottom:2px dashed @navigation-border;
     }
     img {
       border-radius: 10px;
@@ -68,14 +79,17 @@
   }
 
   .content-pick {
-    padding-top: 10px;
+    border-top:2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    padding-top: 35px;
     @media @mobile {
       flex-direction: column;
       justify-content: center;
       width: 88%;
-      margin: 0 auto;
+      margin: 5% auto 0;
+      padding-top: 10px;
+      border-top: 1px solid @main-bg;
     }
     .destination {
       width: 30%;

@@ -1,8 +1,13 @@
 // Navigation Styles here
 nav{
    .flex-mixin();
+   @media @mobile {
+       flex-wrap: wrap;
+       h1{
+           margin: 3% 32%;
+       }
+   }
    padding: 2% 0;
-   border-bottom: 2px dashed @navigation-border;
    h1{
        margin-right: 34%;
    }
@@ -12,4 +17,3 @@ nav{
        font-size: 1.6rem;
    }
 }
-
