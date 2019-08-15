@@ -183,14 +183,11 @@ nav a {
   color: black;
   font-size: 1.6rem;
 }
-header {
-  padding: 2% 0;
-  border-bottom: 2px dashed #C0C0C0;
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
+  margin-top: 2%;
 }
 .footer p {
   text-align: center;
@@ -198,19 +195,46 @@ header {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
+.home header {
+  padding: 0 0 2%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header img {
+  margin-bottom: 2%;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -230,19 +254,38 @@ header {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
+  margin-bottom: 5%;
 }
 .home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    width: 88%;
+    margin: 0 auto;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   background: #17A2B8;
@@ -255,4 +298,20 @@ header {
   border: 1px solid #17A2B8;
   border-radius: 5px;
   font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: #17A2B8;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78%;
+    width: 100%;
+    border: 1px solid #17A2B8;
+    border-radius: 5px;
+    font-size: 1.7rem;
+  }
 }
